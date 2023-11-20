@@ -47,8 +47,8 @@ body {
     transform: translate(-50%, -50%);
     z-index: -1;
     color: white;
-    width: 75%;
-    height: 75%;
+    width: 80%;
+    height: 80%;
     background-color: rgba(255, 255, 255, 0.25);
     backdrop-filter: url(#frosted-glass-blur) brightness(0.9);
     border-radius: 50px;
@@ -69,7 +69,7 @@ body {
     top: 50%;
     translate: 0 -50%;
     border-radius: 10%;
-    margin-left: 5%;
+    margin-left: 25px;
 }
 
 .img-1 {
@@ -81,14 +81,15 @@ body {
 .head h1 {
     font-size: 60px;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-left: 40px;
     text-align: center;
     position: relative;
 }
 
 .long-underline-line {
     position: absolute;
-    top: 120px;
+    top: 100px;
     bottom: 0;
     left: 38%;
     width: 60%;
@@ -105,7 +106,7 @@ body {
 
 .abt-me p {
     font-family: 'David', sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.5;
     color: honeydew;
 
