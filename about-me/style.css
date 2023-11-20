@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #c850c0, #4158d0) rgb(169, 168, 168);
+    background-blend-mode: multiply;
+    background-size: 200% 100%;
+    animation: gradient-anim 10s ease-in-out infinite;
+}
+
+@keyframes gradient-anim {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: white;
+    width: 75%;
+    height: 75%;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: url(#frosted-glass-blur) brightness(0.9);
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Define the SVG filter */
+/*@svg-define url(#frosted-glass-blur){
+<filter id="frosted-glass-blur"><feGaussianBlur stdDeviation="5"></feGaussianBlur></filter>
+}*/
+
+.img-container {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    border-radius: 10%;
+    margin-left: 5%;
+}
+
+.img-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.head h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.long-underline-line {
+    position: absolute;
+    top: 120px;
+    bottom: 0;
+    left: 38%;
+    width: 60%;
+    height: 5px;
+    background-color: rgb(255, 255, 255, 0.25);
+}
+
+.abt-me {
+    position: absolute;
+    left: 38%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.abt-me p {
+    font-family: 'David', sans-serif;
+    font-size: 30px;
+    line-height: 1.5;
+    color: honeydew;
+
+}
+

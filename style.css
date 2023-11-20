@@ -1,0 +1,81 @@
+
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+.content .title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.content p {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.home {
+    background: url(assets/adhi.jpg) #424242;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+}
+
+.tx-fx {
+    --gradient-angle: -120deg;
+    background-image: linear-gradient(var(--gradient-angle), #c850c0, #4158d0);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+    transition: var(--gradient-angle) 0.5s ease-in-out;
+}
+
+/* CSS */
+.btn-1{
+  width: fit-content;
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+
+  border-radius: 20px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 20px;
+  font-weight: 500;
+  height: 4rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    padding: 0 2.6rem;
+  }
+}
